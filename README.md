@@ -181,11 +181,11 @@ Fetches a dictionary of questions for the specified category
       "question": "What is the heaviest organ in the human body?"
     }, 
     {
-      "answer": "Alexander Fleming", 
+      "answer": "Twenty Love Poems and a Song of Despair", 
       "category": 1, 
       "difficulty": 3, 
       "id": 21, 
-      "question": "Who discovered penicillin?"
+      "question": "What is pablo naruda best seller book"
     }, 
   ], 
   "success": true, 
@@ -199,11 +199,11 @@ Fetches one random question within a specified category. Previously asked questi
 ```
 {
   "question": {
-    "answer": "The Liver", 
+    "answer": "Python", 
     "category": 1, 
     "difficulty": 4, 
     "id": 20, 
-    "question": "What is the heaviest organ in the human body?"
+    "question": "What is you favorite programming language?"
   }, 
   "success": true
 }
@@ -233,5 +233,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ### Acknowledgments
 
-* Inspiration [AWS Documentation](https://docs.aws.amazon.com/redshift/latest/dg/r_CREATE_TABLE_NEW.html),
+* Inspiration [Flask Documentation](https://flask.palletsprojects.com/en/1.1.x/),
 [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
