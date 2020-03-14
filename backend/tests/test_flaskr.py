@@ -3,7 +3,7 @@ import unittest
 import json
 from flask_sqlalchemy import SQLAlchemy
 
-from flaskr import create_app
+from backend.flaskr import create_app
 from backand.db.models import setup_db, Question, Category
 
 
@@ -119,7 +119,10 @@ class TriviaTestCase(unittest.TestCase):
         self.assertEqual(data["message"], "unprocessable")
 
     def test_search_questions(self):
-        new_search = {'searchTerm': 'a'}
+        new_search = {'searchTerm': 'a'}   """
+    Write at least one test for each test for successful operation and for expected errors.
+    """
+
         res = self.client().post('/questions/search', json=new_search)
         data = json.loads(res.data)
 
