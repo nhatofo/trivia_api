@@ -3,7 +3,7 @@ import unittest
 from flask import json
 from flask_sqlalchemy import SQLAlchemy
 
-from models import setup_db
+from backend.db.models import setup_db
 from flaskr import create_app
 
 
