@@ -104,18 +104,11 @@ Fetches a paginated dictionary of questions of all available categories
   "current_category": null, 
   "questions": [
     {
-      "answer": "Maya Angelou", 
-      "category": 4, 
-      "difficulty": 2, 
-      "id": 5, 
-      "question": "Whose autobiography is entitled 'I Know Why the Caged Bird Sings'?"
-    },  
-    {
-      "answer": "Escher", 
+      "answer": "Answer", 
       "category": 2, 
       "difficulty": 1, 
       "id": 16, 
-      "question": "Which Dutch graphic artist\u2013initials M C was a creator of optical illusions?"
+      "question": "any question?"
     }
   ], 
   "success": true, 
@@ -179,14 +172,8 @@ Fetches a dictionary of questions for the specified category
       "difficulty": 4, 
       "id": 20, 
       "question": "What is the heaviest organ in the human body?"
-    }, 
-    {
-      "answer": "Alexander Fleming", 
-      "category": 1, 
-      "difficulty": 3, 
-      "id": 21, 
-      "question": "Who discovered penicillin?"
-    }, 
+    }
+   
   ], 
   "success": true, 
   "total_questions": 2
