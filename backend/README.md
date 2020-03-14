@@ -217,3 +217,27 @@ createdb trivia_test
 psql trivia_test < trivia.psql
 python test_flaskr.py
 ```
+### Built With
+
+* [Amazon Redshift](https://console.aws.amazon.com/redshift/home?region=us-east-1) - Amazon Cloud Based Database Management System.
+* [Amazon IAM ](https://console.aws.amazon.com/iam/home?region=us-east-1) -  Amazon Identity and Access Management System
+* [S3 buckets](https://s3.console.aws.amazon.com/s3/home?region=us-east-1#) - Amazon storage service
+* [Python](https://www.python.org/) - Scripting Language
+
+### Contributing
+* **Teofilo Carlos Chichume ** 
+
+
+### Authors
+
+* **Teofilo Carlos Chichume** - *Initial work* - [nhatofo](https://github.com/nhatofo/redshiftdw_ud.git)
+
+
+### License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+### Acknowledgments
+
+* Inspiration [Flask Documentation](https://flask.palletsprojects.com/en/1.1.x/)
+[PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
