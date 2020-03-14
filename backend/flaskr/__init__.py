@@ -120,12 +120,9 @@ def create_app(test_config=None):
                 'total_questions': len(all_questions),
                 'current_category': None
             })
-        except Exception as error:
-            raise error      
-        finally:
-            db.session.close()
+        except:
+            abort(404)
             
-
     @app.route('/categories/<int:category_id>/questions', methods=['GET'])
     def retrieve_questions_by_category(category_id):
 
