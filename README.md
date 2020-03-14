@@ -109,14 +109,7 @@ Fetches a paginated dictionary of questions of all available categories
       "difficulty": 2, 
       "id": 5, 
       "question": "Whose autobiography is entitled 'I Know Why the Caged Bird Sings'?"
-    },  
-    {
-      "answer": "Escher", 
-      "category": 2, 
-      "difficulty": 1, 
-      "id": 16, 
-      "question": "Which Dutch graphic artist\u2013initials M C was a creator of optical illusions?"
-    }
+    } 
   ], 
   "success": true, 
   "total_questions": 2
@@ -174,19 +167,12 @@ Fetches a dictionary of questions for the specified category
   "current_category": 1, 
   "questions": [
     {
-      "answer": "A pele", 
-      "category": 1, 
-      "difficulty": 4, 
-      "id": 20, 
-      "question": "What is the heaviest organ in the human body?"
-    }, 
-    {
       "answer": "Twenty Love Poems and a Song of Despair", 
       "category": 1, 
       "difficulty": 3, 
       "id": 21, 
       "question": "What is pablo naruda best seller book"
-    }, 
+    }
   ], 
   "success": true, 
   "total_questions": 2
