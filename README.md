@@ -153,11 +153,11 @@ Fetches all questions where a substring matches the search term (not case-sensit
   "current_category": null, 
   "questions": [
     {
-      "answer": "Lisbon", 
+      "answer": "Go to the beach", 
       "category": 2, 
       "difficulty": 1, 
       "id": 29, 
-      "question": "What is the capital of Portugal?"
+      "question": "What is the best thing to do in summer?"
     }
   ], 
   "success": true, 
@@ -174,7 +174,7 @@ Fetches a dictionary of questions for the specified category
   "current_category": 1, 
   "questions": [
     {
-      "answer": "The Liver", 
+      "answer": "A pele", 
       "category": 1, 
       "difficulty": 4, 
       "id": 20, 

@@ -1,8 +1,6 @@
 .vscode
 __pycache__
 venv
-trivia_api
-
 # OS generated files #
 ######################
 .DS_Store
