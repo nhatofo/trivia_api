@@ -4,7 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_cors import CORS
 import random
 
-from db.models import setup_db, Question, Category
+from backend.db.models import setup_db, Question, Category
 
 QUESTIONS_PER_PAGE = 10
 
@@ -104,20 +104,27 @@ def create_app(test_config=None):
 
     @app.route('/questions/search', methods=['POST'])
     def search_questions():
-        body = request.get_json()
-        search_term = body.get('searchTerm', None)
-
-        if search_term:
-            search_results = Question.query.filter(
-                Question.question.ilike(f'%{search_term}%')).all()
+        try:
+            search_term = request.get_json().get('searchTerm', None)
+            all_questions = Question.query.filter(
+                Question.question.ilike("%" + search_term + "%")
+            ).all()
+            current_questions = paginate_quetions(request, all_questions)
+            
+            if not current_questions:
+                abort(404)
 
             return jsonify({
                 'success': True,
-                'questions': [question.format() for question in search_results],
-                'total_questions': len(search_results),
+                'questions': current_questions,
+                'total_questions': len(all_questions),
                 'current_category': None
             })
-        abort(404)
+        except Exception as error:
+            raise error      
+        finally:
+            db.session.close()
+            
 
     @app.route('/categories/<int:category_id>/questions', methods=['GET'])
     def retrieve_questions_by_category(category_id):
